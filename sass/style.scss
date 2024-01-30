@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 200vh;
+}
+
+@mixin p-styles() {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-style: 16px;
+    line-height: 26px;
+}
+
+;
+
+@import "./site2-headerNav";
+@import "./site2-hero";
+@import "./site2-s2";
+@import "./site2-s3";
+@import "./site2-s4";
+@import "./site2-footer";

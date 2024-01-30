@@ -1,0 +1,48 @@
+@mixin transform() {
+  transform: scale(1.1);
+}
+
+nav {
+  width: 1281px;
+  margin: auto;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  img {
+    width: 235px;
+    height: 25px;
+    &:hover {
+      @include transform();
+    }
+  }
+
+  ul {
+    display: flex;
+    width: auto;
+    height: 15px;
+
+    li {
+      list-style: none;
+
+      &:hover {
+        @include transform();
+      }
+
+      a {
+        width: auto;
+        height: 15px;
+        text-decoration: none;
+        margin: 0 15px;
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.92px;
+        color: rgba(131, 136, 143, 1);
+      }
+    }
+  }
+}

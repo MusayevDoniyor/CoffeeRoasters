@@ -1,0 +1,72 @@
+@mixin transform() {
+    transform: scale(1.1);
+}
+
+$hoverColor: #2c3e50;
+
+nav {
+    width: 1280px;
+    margin: auto;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+    img {
+        width: 236px;
+        height: 26px;
+
+        &:hover {
+            @include transform();
+        }
+    }
+
+    ul {
+        display: flex;
+        width: auto;
+        height: 15px;
+
+        li {
+            list-style: none;
+            position: relative;
+
+            a {
+                width: auto;
+                height: 15px;
+                text-decoration: none;
+                margin: 0 15px;
+                font-family: "Barlow", sans-serif;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 0.92px;
+                color: rgba(131, 136, 143, 1);
+                position: relative;
+
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: transparent;
+                    transition: width 0.3s, background-color 0.6s;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    background-color: $hoverColor;
+                }
+
+                &:hover {
+                    @include transform();
+                    color: $hoverColor;
+                }
+            }
+        }
+    }
+}

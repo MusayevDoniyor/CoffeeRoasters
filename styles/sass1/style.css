@@ -50,7 +50,7 @@ nav ul li a {
 }
 
 .s1 {
-  background-image: url(../image/bgimage.png);
+  background-image: url(../../img/image1/bgimage.png);
   background-repeat: no-repeat;
   width: 1281px;
   height: 600px;
@@ -110,7 +110,7 @@ nav ul li a {
   height: 398.55px;
   background-color: white;
   margin: 50px auto 250px;
-  background-image: url(../image/bgtext1.png);
+  background-image: url(../../img/image1/bgtext1.png);
   background-repeat: no-repeat;
 }
 .s2 .s2-mainCard {
